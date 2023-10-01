@@ -18,7 +18,7 @@ export const Card: React.FunctionComponent<CardProps> = ({
     button,
     isSelected,
 }) => (
-    <Styled.Container className={`card${isSelected ? `--selected` : ''}`}>
+    <Styled.Container className={`card${isSelected ? ` card--selected` : ''}`}>
         <div className='card__image-container'>
             <img className='card__image-container__image' src={image} />
         </div>
@@ -31,10 +31,13 @@ export const Card: React.FunctionComponent<CardProps> = ({
             <p className='card__details__description'>
                 {description}
             </p>
-            
-            <Styled.Button className='card__details__button'>
-                {button.label}
-            </Styled.Button>
+
+            {button ? 
+                <Styled.Button className='card__details__button'>
+                    {button.label}
+                </Styled.Button>
+                : <></>
+            }
         </div>
     </Styled.Container>
 );

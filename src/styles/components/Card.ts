@@ -35,11 +35,15 @@ export const Container = styled.article`
             font-size: ${utilities.TYPOGRAPHY.p.FONT_SIZE};
             line-height: ${utilities.TYPOGRAPHY.p.LINE_HEIGHT};
             font-weight: ${utilities.TYPOGRAPHY.p.FONT_WEIGHT};
-            margin: 0 0 16px 0;
+            margin: 0;
+        }
+
+        .card__details__button {
+            margin-top: 16px;
         }
     }
 
-    &--selected {
+    &.card--selected {
         background-color: ${utilities.COLOURS.PRIMARY__SELECTED};
     }
 
