@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled.article`
     background-color: #fff;
     font-family: 'Gotham';
     padding: 20px;
 `
 
-export const Button = styled.div`
+export const Button = styled.button`
     background-color: #eee;
     cursor: pointer;
     display: inline-block;

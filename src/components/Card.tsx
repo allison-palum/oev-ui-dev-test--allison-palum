@@ -23,13 +23,13 @@ export const Card: React.FunctionComponent<CardProps> = ({
             <img src={image} />
         </div>
 
-        <div className={isSelected ? `card__heading card__heading--selected` :  `card__heading`}>
+        <h4 className={isSelected ? `card__heading card__heading--selected` :  `card__heading`}>
             {heading}
-        </div>
+        </h4>
 
-        <div className={isSelected ? `card__description card__description--selected` :  `card__description`}>
+        <p className={isSelected ? `card__description card__description--selected` :  `card__description`}>
             {description}
-        </div>
+        </p>
 
         <Styled.Button className={isSelected ? `card__button card__button--selected` :  `card__description`}>
             {button.label}
