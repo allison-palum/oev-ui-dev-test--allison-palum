@@ -1,4 +1,4 @@
-import * as Styled from "../styles/Card";
+import * as Styled from "../styles/components/Card";
 
 export interface CardProps {
     image: string;
@@ -18,20 +18,20 @@ export const Card: React.FunctionComponent<CardProps> = ({
     button,
     isSelected,
 }) => (
-    <Styled.Container className={isSelected ? `card card--selected` :  `card`}>
-        <div className={isSelected ? `card__image card__image--selected` :  `card__image`}>
-            <img src={image} />
+    <Styled.Container className={`card${isSelected ? `--selected` : ''}`}>
+        <div className={`card__image-container${isSelected ? `--selected` : ''}`}>
+            <img className={`card__image-container__image${isSelected ? `--selected` : ''}`} src={image} />
         </div>
 
-        <h4 className={isSelected ? `card__heading card__heading--selected` :  `card__heading`}>
+        <h4 className={`card__heading${isSelected ? `--selected` : ''}`}>
             {heading}
         </h4>
 
-        <p className={isSelected ? `card__description card__description--selected` :  `card__description`}>
+        <p className={`card__description${isSelected ? `--selected` : ''}`}>
             {description}
         </p>
 
-        <Styled.Button className={isSelected ? `card__button card__button--selected` :  `card__description`}>
+        <Styled.Button className={`card__button${isSelected ? `--selected` : ''}`}>
             {button.label}
         </Styled.Button>
     </Styled.Container>
