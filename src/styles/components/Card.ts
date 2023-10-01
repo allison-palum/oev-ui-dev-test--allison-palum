@@ -2,12 +2,12 @@ import styled from 'styled-components'
 import * as utilities from '../utilities';
 
 export const Container = styled.article`
-    font-family: ${utilities.TYPOGRAPHY.FONT_FAMILY};
-    background-color: ${utilities.COLOURS.PRIMARY};
+    font-family: ${utilities.typography.FONT_FAMILY};
+    background-color: ${utilities.colours.background.DEFAULT};
     border-radius: 16px;
 
     .card__image-container {
-        background-color: ${utilities.COLOURS.BACKGROUND__IMAGE};
+        background-color: ${utilities.colours.neutrals.IMAGE_BACKGROUND};
         border-radius: 16px 16px 0 0;
 
         .card__image-container__image {
@@ -21,20 +21,20 @@ export const Container = styled.article`
 
         .card__details__header,
         .card__details__description {
-            color: ${utilities.COLOURS.TEXT};
+            color: ${utilities.colours.neutrals.TEXT};
         }
 
         .card__details__header {
-            font-size: ${utilities.TYPOGRAPHY.h4.FONT_SIZE};
-            line-height: ${utilities.TYPOGRAPHY.h4.LINE_HEIGHT};
-            font-weight: ${utilities.TYPOGRAPHY.h4.FONT_WEIGHT};
+            font-size: ${utilities.typography.h4.FONT_SIZE};
+            line-height: ${utilities.typography.h4.LINE_HEIGHT};
+            font-weight: ${utilities.typography.h4.FONT_WEIGHT};
             margin: 0 0 8px 0;
         }
 
         .card__details__description {
-            font-size: ${utilities.TYPOGRAPHY.p.FONT_SIZE};
-            line-height: ${utilities.TYPOGRAPHY.p.LINE_HEIGHT};
-            font-weight: ${utilities.TYPOGRAPHY.p.FONT_WEIGHT};
+            font-size: ${utilities.typography.p.FONT_SIZE};
+            line-height: ${utilities.typography.p.LINE_HEIGHT};
+            font-weight: ${utilities.typography.p.FONT_WEIGHT};
             margin: 0;
         }
 
@@ -44,12 +44,12 @@ export const Container = styled.article`
     }
 
     &.card--selected {
-        background-color: ${utilities.COLOURS.PRIMARY__SELECTED};
+        background-color: ${utilities.colours.secondary_purples.SELECTED};
     }
 
     &:hover {
         cursor: pointer;
-        background-color: ${utilities.COLOURS.PRIMARY__HOVER};
+        background-color: ${utilities.colours.secondary_purples.HOVER};
         transform: translateY(-0.25rem);
         transition: all 60ms ease-in 0s;
     }
@@ -58,19 +58,19 @@ export const Container = styled.article`
 export const Button = styled.button`
     cursor: pointer;
     text-transform: uppercase;
-    background-color: ${utilities.COLOURS.BUTTON__DEFAULT};
-    color: ${utilities.COLOURS.PRIMARY};
-    font-size: ${utilities.TYPOGRAPHY.button.FONT_SIZE};
-    line-height: ${utilities.TYPOGRAPHY.button.LINE_HEIGHT};
-    font-weight: ${utilities.TYPOGRAPHY.button.FONT_WEIGHT};
+    background-color: ${utilities.colours.primary.DEFAULT};
+    color: ${utilities.colours.neutrals.TEXT};
+    font-size: ${utilities.typography.button.FONT_SIZE};
+    line-height: ${utilities.typography.button.LINE_HEIGHT};
+    font-weight: ${utilities.typography.button.FONT_WEIGHT};
     display: inline-block;
     border: none;
     padding: 16px 32px;
     border-radius: 8px;
 
     &:hover {
-        background-color: ${utilities.COLOURS.BUTTON__HOVER};
-        color: ${utilities.COLOURS.TEXT};
+        background-color: ${utilities.colours.secondary_blues.HOVER};
+        color: ${utilities.colours.neutrals.TEXT};
         transition: all 60ms ease-in 0s;
     }
 `

@@ -1,10 +1,10 @@
 import * as colours from '../utilities/colours';
 
-// TYPOGRAPHY
+// typography
 
 // basics
 export const FONT_FAMILY = 'Gotham';
-export const FONT_COLOUR = `${colours.TEXT}`;
+export const FONT_COLOUR = `${colours.neutrals.TEXT}`;
 
 // h4
 export const h4 = {

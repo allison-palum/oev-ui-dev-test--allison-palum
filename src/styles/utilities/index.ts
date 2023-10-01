@@ -1,2 +1,2 @@
-export { default as COLOURS } from "./colours";
-export { default as TYPOGRAPHY } from "./typography";
+export { default as colours } from "./colours";
+export { default as typography } from "./typography";
