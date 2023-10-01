@@ -44,6 +44,7 @@ If you have time, think about the structure of the app. There is no right or wro
 
 -As I styled the Card component, I began to mess around with the file strucutre. Firstly, I created a Button component so that it could live separately from the Card component. I also created styled components for the Header and Body text, so that those can be styled once and used throughout the design system. 
 -In the styles folder, I added a utilities folder for any reusable variables. In this case, all of the colours used for this Card and Button components
+-I am a big fan of object oriented css because it allows us to think about our styles in the same way we do our React components. This helps when building applications because the file structures can mirror each other, which makes the application more accessible to fellow developers. Furthermore, styles become reusable and easily digestable. I've tried to implement OOCSS while styling the Card component as best I can. 
 
 ## Suggested Time
 We appreciate your time is valuable and we suggest you don't spend more than a couple of hours on these tasks. Please provide notes for anything else you would have done given more time
