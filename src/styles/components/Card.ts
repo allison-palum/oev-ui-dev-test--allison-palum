@@ -6,6 +6,7 @@ export const Container = styled.article`
     border-radius: 16px;
 
     .card__image-container {
+        display: inline-block;
         background-color: ${utilities.colours.neutrals.IMAGE_BACKGROUND};
         border-radius: 16px 16px 0 0;
 
@@ -45,5 +46,14 @@ export const Container = styled.article`
         background-color: ${utilities.colours.secondary_purples.HOVER};
         transform: translateY(-0.25rem);
         transition: all 60ms ease-in 0s;
+    }
+
+    &.card--has-button {
+        &:hover {
+            cursor: default;
+            background-color: ${utilities.colours.background.DEFAULT};
+            transform: none;
+            transition: none;
+        }
     }
 `

@@ -16,7 +16,6 @@ export const Container = styled.button`
 
     &:hover {
         background-color: ${utilities.colours.secondary_blues.HOVER};
-        color: ${utilities.colours.neutrals.TEXT};
         transition: all 60ms ease-in 0s;
     }
 `

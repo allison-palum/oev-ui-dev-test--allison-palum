@@ -42,7 +42,11 @@ Using your design from the Figma task, style this component to match.
 ### 3. Storybook
 Currently this component has one story, think about capturing other potential use cases of this component.
 
->1. With the Figma component not having a Button, and the component in this application having one, the "isSelected" was something to grapple with. It would make sense that a Card component can either be selectable OR have a call to action button. For this reason, I separated those two versions of the Card component into different stories. The default Card has no button and is selectable. You then have the option to create a Card with a Button.  
+>1. With the Figma component not having a Button, and the component in this application having one, the "isSelected" was something to grapple with. It would make sense that a Card component can either be selectable OR have a call to action button. For this reason, I separated those two versions of the Card component into different stories. 
+>
+>2. The default Card has no button and is selectable. This includes a hover state on the card where the background changes colors and the card moves as you hover over it.
+>
+>3. You then have the option to create a Card with a Button, which will not change styles when hovered over. Only the button itself is clickable. This was all achieved via BEM class modifiers and css selection. 
 
 ### 4. Organisation
 If you have time, think about the structure of the app. There is no right or wrong here, we're just interested to know how you would structure your components/stories/styles

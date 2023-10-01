@@ -20,7 +20,7 @@ export const Card: React.FunctionComponent<CardProps> = ({
     button,
     isSelected,
 }) => (
-    <StyledCard.Container className={`card${isSelected ? ` card--selected` : ''}`}>
+    <StyledCard.Container className={`card${isSelected ? ` card--selected` : ''}${button ? ` card--has-button` : ''}`}>
         <div className='card__image-container'>
             <img className='card__image-container__image' src={image} />
         </div>
