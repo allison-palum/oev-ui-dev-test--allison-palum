@@ -24,6 +24,8 @@ After this, a new tab will open with Storybook running on `http://localhost:6006
 ### 1. Markup
 Think about how this component could be improved semantically, is there better markup that could be used for the content. From an accessibility point of view, think about how this could be improved.
 
+> To improve the Card components markup, I started by adding BEM class names to each element of the Card. This included adding a class to represent a Cards selected state. After that, I updated the HTML elements being used (both in the Card component and in the styled components). This helps screen readers and humans better understand the purpose of the markup by using elements that accurately describe the content within them. Furthermore, for typography's sake, using HTML elements like h4 and p will allow text styles to be styled once, rather than on a component-by-component basis, which will support consistency.
+
 ### 2. Styling
 Using your design from the Figma task, style this component to match. 
 
