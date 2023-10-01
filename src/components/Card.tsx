@@ -18,15 +18,15 @@ export const Card: React.FunctionComponent<CardProps> = ({
     button,
     isSelected,
 }) => (
-    <Styled.Container>
-        <div>
+    <Styled.Container className="card">
+        <div className="card__image">
             <img src={image} />
         </div>
 
-        <div>{heading}</div>
+        <div className="card__heading">{heading}</div>
 
-        <div>{description}</div>
+        <div className="card__description">{description}</div>
 
-        <Styled.Button>{button.label}</Styled.Button>
+        <Styled.Button className="card__button">{button.label}</Styled.Button>
     </Styled.Container>
 );
