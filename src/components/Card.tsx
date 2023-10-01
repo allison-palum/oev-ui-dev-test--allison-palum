@@ -19,20 +19,22 @@ export const Card: React.FunctionComponent<CardProps> = ({
     isSelected,
 }) => (
     <Styled.Container className={`card${isSelected ? `--selected` : ''}`}>
-        <div className={`card__image-container${isSelected ? `--selected` : ''}`}>
-            <img className={`card__image-container__image${isSelected ? `--selected` : ''}`} src={image} />
+        <div className='card__image-container'>
+            <img className='card__image-container__image' src={image} />
         </div>
 
-        <h4 className={`card__heading${isSelected ? `--selected` : ''}`}>
-            {heading}
-        </h4>
+        <div className='card__details'>
+            <h4 className='card__details__header'>
+                {heading}
+            </h4>
 
-        <p className={`card__description${isSelected ? `--selected` : ''}`}>
-            {description}
-        </p>
-
-        <Styled.Button className={`card__button${isSelected ? `--selected` : ''}`}>
-            {button.label}
-        </Styled.Button>
+            <p className='card__details__description'>
+                {description}
+            </p>
+            
+            <Styled.Button className='card__details__button'>
+                {button.label}
+            </Styled.Button>
+        </div>
     </Styled.Container>
 );

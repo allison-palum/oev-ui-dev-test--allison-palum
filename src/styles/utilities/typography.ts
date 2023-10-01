@@ -7,27 +7,37 @@ export const FONT_FAMILY = 'Gotham';
 export const FONT_COLOUR = `${colours.TEXT}`;
 
 // h4
-export const h4_FONT_SIZE = '20px';
-export const h4_LINE_HEIGHT = '30px';
-export const h4_FONT_WEIGHT = '700';
+export const h4 = {
+    'FONT_SIZE': '20px',
+    'LINE_HEIGHT': '30px',
+    'FONT-WEIGHT': '700'
+}
 
 // p
-export const p_FONT_SIZE = '16px';
-export const p_LINE_HEIGHT = '24px';
-export const p_FONT_WEIGHT = '300';
+export const p = {
+    'FONT_SIZE': '16px',
+    'LINE_HEIGHT': '24px',
+    'FONT-WEIGHT': '300'
+}
+
+// button
+export const button = {
+    'FONT_SIZE': '18px',
+    'LINE_HEIGHT': '27px',
+    'FONT_WEIGHT': '700'
+}
 
 export default {
-    //basics
+    // basics
     FONT_FAMILY, 
     FONT_COLOUR, 
 
-    //h4
-    h4_FONT_SIZE, 
-    h4_LINE_HEIGHT, 
-    h4_FONT_WEIGHT,
+    // h4
+    h4,
 
-    //p
-    p_FONT_SIZE,
-    p_LINE_HEIGHT,
-    p_FONT_WEIGHT
+    // p
+    p,
+
+    // button
+    button
 };
