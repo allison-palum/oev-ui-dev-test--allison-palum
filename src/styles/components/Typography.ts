@@ -20,10 +20,3 @@ export const Body = styled.p`
     line-height: 24px;
     font-weight: 300;
 `;
-
-export default {
-    FONT_FAMILY,
-    FONT_COLOUR,
-    Header,
-    Body
-}

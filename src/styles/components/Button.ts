@@ -20,7 +20,3 @@ export const Container = styled.button`
         transition: all 60ms ease-in 0s;
     }
 `
-
-export default {
-    Container
-};

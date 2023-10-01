@@ -47,7 +47,3 @@ export const Container = styled.article`
         transition: all 60ms ease-in 0s;
     }
 `
-
-export default {
-    Container
-};

@@ -29,11 +29,18 @@ Think about how this component could be improved semantically, is there better m
 ### 2. Styling
 Using your design from the Figma task, style this component to match. 
 
+>To style the component, I began the same way I did when designing it in Figma. I first created all the necessary variables in a styles/utilities folder so that colours could be reused throughout the design system. Originally, I put typography in the utilities folder as well, but then decided they should instead exist as their own styled components to be reused throughout the system
+>In the Card styled component, I began by nesting all the class names appropriately and applying the styles, using variables where possible. 
+>The Figma did not have the Button component, so I just styled the Button to match the one in the Mosaic design system.
+
 ### 3. Storybook
 Currently this component has one story, think about capturing other potential use cases of this component.
 
 ### 4. Organisation
 If you have time, think about the structure of the app. There is no right or wrong here, we're just interested to know how you would structure your components/stories/styles
+
+>As I styled the Card component, I began to mess around with the file strucutre. Firstly, I created a Button component so that it could live separately from the Card component. I also created styled components for the Header and Body text, so that those can be styled once and used throughout the design system.
+>In the styles folde, I added a utilities folder for any reusable variables. In this case, all of the colours used for this Card and Button components
 
 ## Suggested Time
 We appreciate your time is valuable and we suggest you don't spend more than a couple of hours on these tasks. Please provide notes for anything else you would have done given more time
