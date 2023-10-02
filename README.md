@@ -33,7 +33,7 @@ Think about how this component could be improved semantically, is there better m
 ### 2. Styling
 Using your design from the Figma task, style this component to match. 
 
->1. To style the component, I began the same way I did when designing the component in Figma. I first created all the necessary variables in a styles/utilities folder so that colours could be reused throughout the design system. Initially, I put typography in the utilities folder as well, but then decided they should exist as their own styled components to be reused throughout the system
+>1. To style the component, I began the same way I did when designing the component in Figma. I first created all the necessary variables in a `styles/utilities` folder so that colours could be reused throughout the design system. Initially, I put typography in the utilities folder as well, but then decided they should exist as their own styled components to be reused throughout the system
 >
 >2. In the Card styled component, I began by nesting all the class names appropriately and applying the styles, using variables where possible. 
 >
@@ -44,16 +44,18 @@ Using your design from the Figma task, style this component to match.
 ### 3. Storybook
 Currently this component has one story, think about capturing other potential use cases of this component.
 
->1. With the Figma component not having a Button, and the component in this application having one, the "isSelected" was something to grapple with. It would make sense that a Card component can either be selectable OR have a call to action button. For this reason, I separated those two versions of the Card component into different stories. 
+>1. With the Figma component not having a Button, and the component in this application having one, the `isSelected` was something to grapple with. It would make sense that a Card component can either be selectable OR have a call to action button. For this reason, I separated those two versions of the Card component into different stories.
 >
->2. The default Card has no button and is selectable. This includes a hover state on the card where the background changes colors and the card moves as you hover over it.
+>2. If I had more time, I would have separated these two card functionalities into two different components: a `Card` and a `SelectableCard`.
 >
->3. You then have the option to create a Card with a Button, which will not change styles when hovered over. Only the button itself is clickable. This was all achieved via BEM class modifiers and css selection. 
+>3. The default Card has no button and is selectable. This includes a hover state on the card where the background changes colors and the card moves as you hover over it.
+>
+>4. You then have the option to create a Card with a Button, which will not change styles when hovered over. Only the button itself is clickable. This was all achieved via BEM class modifiers and css selection. 
 
 ### 4. Organisation
 If you have time, think about the structure of the app. There is no right or wrong here, we're just interested to know how you would structure your components/stories/styles
 
->1. As I styled the Card component, I began to mess around with the file structure. Firstly, I created a Button component to live separately from the Card component. I also created styled components for the Header and Body text, so that those can be styled once and used throughout the design system. 
+>1. As I styled the Card component, I began to mess around with the file structure. Firstly, I separated the `Button` styles from the `Card` styles. I also created styled components for the Header and Body text, so that those can be styled once and used throughout the design system. 
 >
 >2. In the styles folder, I added a utilities folder for any reusable variables. In this case, all of the colours used for this Card and Button components. I tried to match these variable names semantically to the colour styles I created in Figma.
 >
